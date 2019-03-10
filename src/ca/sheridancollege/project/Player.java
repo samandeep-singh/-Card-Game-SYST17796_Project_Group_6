@@ -24,7 +24,7 @@ public abstract class Player
         protected String HaNguyen;
         private int date;
         
-        public class Player(String samandeep, String HaNguyen, int date){
+        public class Player(String Samandeep, String HaNguyen, int date){
             this.Samandeep = Samandeep;
             this.HaNguyen = HaNguyen;
             this.date = date;
@@ -32,7 +32,7 @@ public abstract class Player
         public String getSamandeep(){
             return Samandeep;
         }
-        public void setSamandeep(String samandeep){
+        public void setSamandeep(String Samandeep){
             this.Samandeep = Samandeep;
         }
         public String getHaNguyen(){
