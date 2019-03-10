@@ -13,7 +13,16 @@ package ca.sheridancollege.project;
  */
 public abstract class Card 
 {
+    public enum RankCard { TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE TEN, JACK, QUEEN, KING, ACE};
+    private String cards;
+    private RankCard numberOfCards;
+    
     //default modifier for child classes
+    public Card{
+        this.cards = card;
+        this.numberOfCards = numberCards;
+        
+    }
     
     /**
      * Students should implement this method for their specific children classes 
