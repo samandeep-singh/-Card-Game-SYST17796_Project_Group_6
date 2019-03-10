@@ -12,16 +12,29 @@ package ca.sheridancollege.project;
 public abstract class Player 
 {
     private String playerID; //the unique ID for this player
-    
+    private String Samandeep;
+    private String HaNguyen;
     /**
      * A constructor that allows you to set the player's unique ID
      * @param name the unique ID to assign to this player.
      */
-    public Player(String name)
+    public Player(String Samandeep, String HaNguyen)
     {
-        playerID= name;
+       this.Samandeep = Samandeep;
+        this.HaNguyen = HaNguyen;
     }
-    
+    public String getSamandeep(){
+        return samandeep;
+    }
+    public void setSamandeep(String samandeep){
+        this.Samandeep = samandeep;
+    }
+    public string getHaNguyen(){
+        return HaNguyen;
+    }
+    public void setHaNguyen(String HaNguyen){
+        this.HaNguyen = HaNguyen;
+    }
     /**
      * @return the playerID
      */
