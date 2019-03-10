@@ -23,7 +23,12 @@ public abstract class Card
         this.numberOfCards = numberCards;
         
     }
-    
+    public RankCard getRank(){
+        return numberOfCards
+    }
+    public void setRank(RankCard numberOfCards){
+        this.numberOfCards = numberOfcards;
+    }
     /**
      * Students should implement this method for their specific children classes 
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
