@@ -12,16 +12,18 @@ package ca.sheridancollege.project;
 public abstract class Player 
 {
     private String playerID; //the unique ID for this player
-    private String Samandeep;
-    private String HaNguyen;
+    protected String Samandeep;
+    protected String HaNguyen;
+    private int date; 
     /**
      * A constructor that allows you to set the player's unique ID
      * @param name the unique ID to assign to this player.
      */
-    public Player(String Samandeep, String HaNguyen)
+    public Player(String Samandeep, String HaNguyen, int date)
     {
        this.Samandeep = Samandeep;
-        this.HaNguyen = HaNguyen;
+       this.HaNguyen = HaNguyen;
+       this.date = date;
     }
     public String getSamandeep(){
         return samandeep;
@@ -38,18 +40,18 @@ public abstract class Player
     /**
      * @return the playerID
      */
-    public String getPlayerID() 
+    public  int getDate() 
     {
-        return playerID;
+        return date;
     }
 
     /**
      * Ensure that the playerID is unique
      * @param givenID the playerID to set
      */
-    public void setPlayerID(String givenID) 
+    public void setDate(int date) 
     {
-        playerID = givenID;
+        this.date = date;
     }
     
     /**
