@@ -20,8 +20,33 @@ public abstract class Player
     public Player(String name)
     {
         playerID= name;
-    }
-    
+        protected String Samandeep;
+        protected String HaNguyen;
+        private int date;
+        
+        public class Player(String samandeep, String HaNguyen, int date){
+            this.Samandeep = Samandeep;
+            this.HaNguyen = HaNguyen;
+            this.date = date;
+        }
+        public String getSamandeep(){
+            return Samandeep;
+        }
+        public void setSamandeep(String samandeep){
+            this.Samandeep = Samandeep;
+        }
+        public String getHaNguyen(){
+            return HaNguyen;
+        }
+        public void setHaNguyen(String HaNguyen){
+            this.HaNguyen = HaNguyen;
+        }
+        public int getDate(){
+            return date;
+        }
+        public void setDate(int date){
+            this.date = date;
+        }
     /**
      * @return the playerID
      */
@@ -38,7 +63,7 @@ public abstract class Player
     {
         playerID = givenID;
     }
-    
+    }
     /**
      * The method to be instantiated when you subclass the Player class
      * with your specific type of Player and filled in with logic to play your game.
